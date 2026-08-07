@@ -1,6 +1,6 @@
 # Tool Safety Matrix
 
-The production MCP server is the source of truth for schemas and annotations. This matrix is the reviewer-facing summary for plugin version 0.1.0.
+The production MCP server is the source of truth for schemas and annotations. This matrix is the reviewer-facing summary for plugin version 0.1.1.
 
 | Tool | Class | User-visible effect |
 |---|---|---|

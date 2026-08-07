@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 - 2026-08-07
+
+- Require explicit enablement after Claude plugin installation.
+- Document the Claude enable and OAuth setup sequence.
+
 ## 0.1.0 - 2026-08-07
 
 - Add Agent Plugins 1.0 manifests.
