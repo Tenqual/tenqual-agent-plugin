@@ -17,7 +17,7 @@ The production MCP server is the source of truth for schemas and annotations. Th
 | `tenqual_estimate_alert` | Read | Computes 30-day candidate volume without consuming quota |
 | `tenqual_list_api_keys` | Read | Lists key summaries; existing secrets are never returned |
 | `tenqual_list_webhooks` | Read | Lists safe webhook summaries and health |
-| `tenqual_draft_alert` | Draft | Creates an inactive draft for human review |
+| `tenqual_draft_alert` | Draft and external read | Optionally reads a company website and creates an inactive draft for human review |
 | `tenqual_create_alert` | Write | Creates an alert, paused unless explicitly enabled |
 | `tenqual_update_alert` | Write | Replaces a definition using optimistic version control |
 | `tenqual_delete_alert` | Destructive | Soft-deletes after exact name and version confirmation |
