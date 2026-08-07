@@ -1,0 +1,20 @@
+{
+  "name": "tenqual-agent-plugin",
+  "version": "0.1.0",
+  "description": "Search global tender notices, inspect qualified matches and documents, and manage Tenqual alerts.",
+  "author": {
+    "name": "Tenqual Software AS",
+    "email": "support@tenqual.com"
+  },
+  "homepage": "https://tenqual.com/docs/ai-agents",
+  "repository": "https://github.com/Tenqual/tenqual-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "tenders",
+    "procurement",
+    "discovery",
+    "alerts",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}

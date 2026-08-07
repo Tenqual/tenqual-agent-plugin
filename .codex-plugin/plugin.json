@@ -1,0 +1,46 @@
+{
+  "name": "tenqual-agent-plugin",
+  "version": "0.1.0",
+  "description": "Search global tender notices, inspect qualified matches and documents, and manage Tenqual alerts.",
+  "author": {
+    "name": "Tenqual Software AS",
+    "email": "support@tenqual.com",
+    "url": "https://tenqual.com"
+  },
+  "homepage": "https://tenqual.com/docs/ai-agents",
+  "repository": "https://github.com/Tenqual/tenqual-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "tenders",
+    "procurement",
+    "discovery",
+    "alerts",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Tenqual",
+    "shortDescription": "Global tender discovery for people and agents.",
+    "longDescription": "Search worldwide procurement notices, inspect source-backed tender details and available documents, review qualified matches, and manage Tenqual discovery alerts from your AI agent.",
+    "developerName": "Tenqual Software AS",
+    "category": "Productivity",
+    "capabilities": [
+      "Tender search",
+      "Alert management",
+      "Qualified matches",
+      "Tender documents"
+    ],
+    "websiteURL": "https://tenqual.com/ai-agents",
+    "privacyPolicyURL": "https://tenqual.com/privacy",
+    "termsOfServiceURL": "https://tenqual.com/terms",
+    "defaultPrompt": [
+      "Find open tenders that fit my company.",
+      "Show my latest qualified matches.",
+      "Review and improve my tender alert."
+    ],
+    "brandColor": "#0F6650",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}
