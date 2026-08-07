@@ -1,6 +1,6 @@
 {
   "name": "tenqual-agent-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Search global tender notices, inspect qualified matches and documents, and manage Tenqual alerts.",
   "author": {
     "name": "Tenqual Software AS",

@@ -70,6 +70,7 @@ def validate_portable_manifests() -> None:
 
 
 def validate_client_manifests() -> None:
+    portable = load_json("plugin.json")
     codex = load_json(".codex-plugin/plugin.json")
     claude = load_json(".claude-plugin/plugin.json")
     client_mcp = load_json(".mcp.json")
@@ -77,10 +78,13 @@ def validate_client_manifests() -> None:
     for label, manifest in (("Codex", codex), ("Claude", claude)):
         if manifest.get("name") != "tenqual-agent-plugin":
             raise AssertionError(f"{label}: package name changed")
-        if manifest.get("version") != "0.1.0":
-            raise AssertionError(f"{label}: expected version 0.1.0")
+        if manifest.get("version") != portable.get("version"):
+            raise AssertionError(f"{label}: version must match plugin.json")
         if manifest.get("mcpServers") != "./.mcp.json":
             raise AssertionError(f"{label}: must use the shared MCP config")
+
+    if claude.get("defaultEnabled") is not False:
+        raise AssertionError("Claude: external-service plugin must require explicit enablement")
 
     server = client_mcp.get("mcpServers", {}).get("tenqual", {})
     if server != {"type": "http", "url": MCP_URL}:

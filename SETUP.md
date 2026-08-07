@@ -17,7 +17,7 @@ Install the published Tenqual plugin when it becomes available in the Codex plug
 
 ## Claude
 
-Install the published Tenqual plugin when it becomes available in the Claude plugin directory. During development, use this repository as a local plugin source. Claude reads `.claude-plugin/plugin.json` and `.mcp.json`; use `/mcp` to complete browser authentication if prompted.
+Install the published Tenqual plugin when it becomes available in the Claude plugin directory. Tenqual installs disabled so connecting an external service is an explicit choice; enable it from `/plugin` or with `claude plugin enable tenqual-agent-plugin`, then use `/mcp` to complete browser authentication. During development, use this repository as a local plugin source. Claude reads `.claude-plugin/plugin.json` and `.mcp.json`.
 
 ## Other clients
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tenqual-agent-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Global tender discovery, qualification, alerts, and source-backed documents for people and AI agents.",
   "author": {
     "name": "Tenqual Software AS",
